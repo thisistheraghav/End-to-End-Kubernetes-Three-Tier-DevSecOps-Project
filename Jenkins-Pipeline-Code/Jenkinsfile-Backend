@@ -8,7 +8,7 @@ pipeline {
         SCANNER_HOME=tool 'sonar-scanner'
         AWS_ACCOUNT_ID = credentials('ACCOUNT_ID')
         AWS_ECR_REPO_NAME = credentials('ECR-2')
-        AWS_DEFAULT_REGION = 'a[-southeast-2'
+        AWS_DEFAULT_REGION = 'ap-southeast-2'
         REPOSITORY_URI = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/"
     }
     stages {
